@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/octopull/octopull.git"
+    "url": "git+https://github.com/alvaropinot/octopull.git"
   },
   "keywords": [
     "update",
@@ -17,9 +17,9 @@
   "author": "Alvaro Pinot <alvaro@neatnait.com> (http://github.com/alvaropinot)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/octopull/octopull/issues"
+    "url": "https://github.com/alvaropinot/octopull/issues"
   },
-  "homepage": "https://github.com/octopull/octopull#readme",
+  "homepage": "https://github.com/alvaropinot/octopull#readme",
   "dependencies": {
     "gh-got": "^5.0.0",
     "tmp": "0.0.31"
