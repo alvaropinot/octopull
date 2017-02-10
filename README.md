@@ -26,11 +26,27 @@ octopull.commit({
 })
 ```
 
+## Develop
 
-# License
+### Setup
+
+```sh
+git clone https://github.com/alvaropinot/octopull
+
+cd octopull
+npm install
+```
+
+### Run
+
+```sh
+# You will need to use `--harmony-async-await` flag to run async/await code.
+node --harmony-async-await lib/index.js
+```
+
+## License
 
 MIT - [@alvaropinot](http://twitter.com/alvaropinot) Alvaro Pinot
-
 
 * CC Logo Octopus by Mark Aventura from the Noun Project
 * CC Logo Octopus Tentacles by Iconic from the Noun Project
