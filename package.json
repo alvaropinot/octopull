@@ -1,0 +1,27 @@
+{
+  "name": "octopull",
+  "version": "1.0.0",
+  "description": "Your multi repo pull request buddy, octopull your git repos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octopull/octopull.git"
+  },
+  "keywords": [
+    "update",
+    "git"
+  ],
+  "author": "Alvaro Pinot <alvaro@neatnait.com> (http://github.com/alvaropinot)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octopull/octopull/issues"
+  },
+  "homepage": "https://github.com/octopull/octopull#readme",
+  "dependencies": {
+    "gh-got": "^5.0.0",
+    "tmp": "0.0.31"
+  }
+}
