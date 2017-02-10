@@ -1,4 +1,4 @@
-![octopull logo](docs/images/octopull-logo-with-tentacles-980-transparent@2x.png)
+![octopull logo](https://cloud.githubusercontent.com/assets/6654199/22862692/168e8cb6-f14d-11e6-9dec-500819127c5c.png)
 
 # octopull
 
