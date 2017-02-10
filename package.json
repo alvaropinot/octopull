@@ -1,6 +1,6 @@
 {
   "name": "octopull",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Your multi repo pull request buddy, octopull your git repos",
   "main": "index.js",
   "scripts": {
