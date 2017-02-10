@@ -5,6 +5,13 @@
 **octopull** /ˈɒktəpəs/ *noun*
 ~~a cephalopod mollusc with eight sucker-bearing arms, a soft sac-like body, strong beak-like jaws, and no internal shell.~~ Your multi repo pull request buddy :) **octopull** your git repos!
 
+## Why?
+The microlibs and webcomponents era annd their multi repository nature, introduces
+a new complexity for chores and repository updating. After cloning, updating a
+travis files for 50 different repos, you'll get the point :P
+
+**octopull** makes updating any set of files to any set of repositories a breeze.
+
 
 ## RDD - README driven development :P
 
