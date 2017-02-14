@@ -12,9 +12,22 @@ travis files for 50 different repos, you'll get the point :P
 
 **octopull** makes updating any set of files to any set of repositories a breeze.
 
+Currently works only with GitHub
 
 ## RDD - README driven development :P
 
+### Install
+```
+npm install octopull --save
+```
+
+### Create .env file with token
+Create a .env file in the root directory of your project.
+```
+GITHUB_TOKEN=your_token
+```
+
+### Write simple script
 ```js
 const octopull = require('octopull')
 
@@ -24,14 +37,12 @@ const repos = [
       repo: 'test-redesigned-broccoli',
       defaultBranch: 'master',
       platform: 'github',
-      token: 'your github api here'
   },
   {
       owner: 'alvaropinot',
       repo: 'test-supreme-bassoon',
       defaultBranch: 'master',
       platform: 'github',
-      token: 'your github api here'
   }
 ]
 
@@ -52,6 +63,11 @@ const options = {
 repos.forEach((config) => octopull.commit(config, options))
 ```
 
+### Run the script
+```
+node yourScript.js
+```
+
 ## Example PR's created by *octopull*
 * https://github.com/alvaropinot/test-redesigned-broccoli/pull/10
 * https://github.com/alvaropinot/test-supreme-bassoon/pull/4
@@ -65,13 +81,14 @@ git clone https://github.com/alvaropinot/octopull
 
 cd octopull
 npm install
+npm run dev
 ```
 
 ### Run
 
 ```sh
-# You will need to use `--harmony-async-await` flag to run async/await code.
-node --harmony-async-await lib/index.js
+cd examples
+node githubPullRequest.js
 ```
 
 ## License
