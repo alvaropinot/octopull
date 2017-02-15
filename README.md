@@ -16,6 +16,10 @@ Currently works only with GitHub
 
 ## RDD - README driven development :P
 
+### Requirements
+- NodeJS v6.0 or newer
+- npm v3.10 or newer
+
 ### Install
 ```
 npm install octopull --save
