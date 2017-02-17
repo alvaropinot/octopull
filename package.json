@@ -6,6 +6,9 @@
   "main": "./lib/index.js",
   "repository": "alvaropinot/octopull",
   "author": "Alvaro Pinot <alvaro@neatnait.com> (http://github.com/alvaropinot)",
+  "contributors": [
+    "Karol Altamirano <karlos.altamirano@gmail.com> (http://www.karolaltamirano.com/)"
+  ],
   "keywords": [
     "repository",
     "pull",
