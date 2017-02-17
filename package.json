@@ -21,6 +21,7 @@
     "clean": "rimraf lib",
     "dev": "npm run clean && babel src -w -s -d lib",
     "build": "npm run clean && babel src -d lib",
+    "lint": "eslint src examples",
     "prepublish": "npm run build"
   },
   "dependencies": {
@@ -30,8 +31,12 @@
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
+    "babel-eslint": "^7.1.1",
     "babel-preset-node6": "^11.0.0",
     "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
     "rimraf": "^2.5.4"
   },
   "engines": {
