@@ -34,6 +34,10 @@ function init (config) {
       const tree = await createTree(parentTree, fileBlobs)
       const commit = await createCommit(parentCommit, tree, message)
 
+      if ((await ghGot.get(`repos/${owner}/${repo}/commits/${commit}`)).body.files.length == 0) {
+        throw 'empty commit';
+      }
+
       return createBranch(branchName, commit)
     }
 
