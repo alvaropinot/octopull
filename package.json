@@ -22,7 +22,7 @@
     "dev": "npm run clean && babel src -w -s -d lib",
     "build": "npm run clean && babel src -d lib",
     "lint": "standard 'src/**/*.js' 'examples/**/*.js'",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "dotenv": "^4.0.0",
@@ -30,14 +30,14 @@
     "tmp": "^0.0.31"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-preset-node6": "^11.0.0",
-    "babel-preset-stage-0": "^6.22.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.12.11",
     "rimraf": "^2.5.4",
     "standard": "^8.6.0"
   },
   "engines": {
-    "node": ">=6",
-    "npm": ">=3.10"
+    "node": ">=12",
+    "npm": ">=6.4"
   }
 }

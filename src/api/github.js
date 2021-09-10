@@ -34,6 +34,10 @@ function init (config) {
       const tree = await createTree(parentTree, fileBlobs)
       const commit = await createCommit(parentCommit, tree, message)
 
+      if ((await ghGot.get(`repos/${owner}/${repo}/commits/${commit}`)).body.files.length == 0) {
+        throw 'empty commit';
+      }
+
       return createBranch(branchName, commit)
     }
 
@@ -44,8 +48,11 @@ function init (config) {
       console.log(`createFileBlob('${filePath}')'`)
 
       const blob = await createRemoteBlob(content)
+      const stats = fs.statSync(path.join('.', filePath))
+
       return {
         name: filePath,
+        mode: stats.mode.toString(8),
         blob,
       }
     }
@@ -106,7 +113,7 @@ function init (config) {
     files.forEach((file) => {
       body.tree.push({
         path: file.name,
-        mode: '100644',
+        mode: file.mode,
         type: 'blob',
         sha: file.blob,
       });
